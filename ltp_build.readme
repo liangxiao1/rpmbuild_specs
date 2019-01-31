@@ -1,0 +1,9 @@
+Below are steps to build it on your own system, tested in RHEL7
+# yum install -y rpm-build rpmdevtools wget autoconf automake sysstat gcc quota
+# rpmdev-setuptree
+# cp ltp.spec /root/rpmbuild/SPECS
+# cd /root/rpmbuild/SOURCES/
+# wget https://github.com/linux-test-project/ltp/archive/master.zip 
+# rpmbuild --undefine dist -ba /root/rpmbuild/SPECS/ltp.spec
+
+Find rpms after build done from "/root/rpmbuild/RPMS"
