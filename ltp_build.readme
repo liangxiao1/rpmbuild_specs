@@ -1,4 +1,4 @@
-Below are steps to build it on your own system, tested in RHEL7
+Below are steps to build it on your own system, tested in RHEL-8 and RHEL-7
 # yum install -y rpm-build rpmdevtools wget autoconf automake sysstat gcc quota git make
 # rpmdev-setuptree
 # cp ltp.spec /root/rpmbuild/SPECS
