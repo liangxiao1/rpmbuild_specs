@@ -1,0 +1,11 @@
+Below are steps to build it on your own system, tested in RHEL-8
+# yum install -y rpm-build rpmdevtools make gcc gcc-c++
+# rpmdev-setuptree
+# cd /root/rpmbuild/SOURCES
+# wget https://github.com/osandov/blktests/archive/master.zip
+# rpmbuild --undefine dist --define "debug_package %{nil}"  -ba /root/rpmbuild/SPECS/blktests.spec
+Notes:
+skip build debuginfo pkg as blktests Makefile not generate it.
+https://bugzilla.redhat.com/show_bug.cgi?id=1583329
+
+Find rpms after build done from "/root/rpmbuild/RPMS"
