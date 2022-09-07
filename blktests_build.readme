@@ -1,5 +1,5 @@
 Below are steps to build it on your own system, tested in RHEL-8
-# yum install -y rpm-build rpmdevtools make gcc gcc-c++
+# yum install -y rpm-build rpmdevtools make gcc gcc-c++ wget
 # rpmdev-setuptree
 # cd /root/rpmbuild/SOURCES
 # wget https://github.com/osandov/blktests/archive/master.zip
