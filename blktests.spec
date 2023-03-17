@@ -1,6 +1,6 @@
 Name:           blktests
 Version:        master
-Release:        20220902%{?dist}
+Release:        20230317%{?dist}
 Summary:        Linux kernel block layer testing framework
 
 License:        GPL
@@ -10,6 +10,8 @@ Packager:       Xiao Liang
 
 BuildRequires:  make gcc
 Requires: nvme-cli fio
+
+%define _build_name_fmt        %%{ARCH}/%%{NAME}-%%{VERSION}.%%{ARCH}.rpm
 
 %description
 blktests is a test framework for the Linux kernel block layer and storage stack.

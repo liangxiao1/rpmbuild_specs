@@ -1,6 +1,6 @@
 Name:           ltp
 Version:        master
-Release:        20220907%{?dist}
+Release:        20230317%{?dist}
 Summary:        Linux Test Project
 
 License:        GPL
@@ -9,6 +9,8 @@ Source0:        https://github.com/linux-test-project/ltp/archive/master.zip
 Packager:       Xiao Liang
 
 BuildRequires:  automake,autoconf,sysstat,gcc,unzip,wget,quota,bzip2
+
+%define _build_name_fmt        %%{ARCH}/%%{NAME}-%%{VERSION}.%%{ARCH}.rpm
 
 %description
 Linux Test Project is a joint project started by SGI, OSDL and Bull developed
