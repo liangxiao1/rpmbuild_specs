@@ -1,5 +1,5 @@
 set -x
-rm -rf rpmbuild_specs
+rm -rf /root/rpmbuild_specs
 yum install -y rpm-build rpmdevtools wget autoconf automake sysstat gcc quota git make
 rm -rf /root/rpmbuild/*
 rpmdev-setuptree

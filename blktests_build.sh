@@ -1,5 +1,5 @@
 set -x
-rm -rf rpmbuild_specs
+rm -rf /root/rpmbuild_specs
 yum install -y rpm-build rpmdevtools make gcc gcc-c++ wget
 rm -rf /root/rpmbuild/*
 rpmdev-setuptree
