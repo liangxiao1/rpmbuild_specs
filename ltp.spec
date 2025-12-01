@@ -1,6 +1,6 @@
 Name:           ltp
 Version:        master
-Release:        20250709%{?dist}
+Release:        20251201%{?dist}
 Summary:        Linux Test Project
 
 License:        GPL

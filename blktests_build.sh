@@ -5,9 +5,7 @@ rm -rf /root/rpmbuild/*
 rpmdev-setuptree
 cd /root
 mkdir rpms
-cd /root/rpmbuild/SOURCES
-wget https://github.com/osandov/blktests/archive/master.zip
-cd /root
 git clone https://github.com/liangxiao1/rpmbuild_specs.git
+spectool -g -R /root/rpmbuild_specs/blktests.spec
 rpmbuild --undefine dist --define "debug_package %{nil}"  -ba /root/rpmbuild_specs/blktests.spec
 find /root/rpmbuild/RPMS -name "*.rpm" -exec mv {} rpms \;
